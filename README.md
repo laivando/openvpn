@@ -11,3 +11,7 @@ NetNam OpenVPN setup guide
 - [1. Topology](#topo)
 - [2. BGP Configuration](#bgpconfig)
 - [3. Config file for client](#clientconfigfile)
+
+<a name="openvpnserver"></a>
+## I. Mikrotik OpenVPN Server Configuration.
+Connect to the Mikrotik using Winbox.  Goto the System —> Certificates:
