@@ -14,6 +14,7 @@ NetNam OpenVPN setup guide
 
 <a name="openvpnserver"></a>
 ## I. Mikrotik OpenVPN Server Configuration.
+
 - Connect to the Mikrotik using Winbox.  Goto the System —> Certificates.
 
 ![image](https://user-images.githubusercontent.com/31034437/30104784-d3313894-9320-11e7-994c-e29ec0242768.png)
@@ -43,3 +44,14 @@ NetNam OpenVPN setup guide
 - Enable OpenVPN Service and Select Valid Certificate by moving to the Interface take and click on "OVPN Server".
 
 ![image](https://user-images.githubusercontent.com/31034437/30105076-b2660ce2-9321-11e7-94f3-2d55eddbcbdc.png)
+
+<a name="oopenvpnclient"></a>
+## II. Windows as OpenVPN Client installation & Configuration.
+
+- Download free OpenVPN client for windows from https://openvpn.net/index.php/download/community-downloads.html, and install it. Once it’s installed, move to the openvpn directory (C:\Program Files\OpenVPN\config).
+
+![image](https://user-images.githubusercontent.com/31034437/30106299-2e07563c-9325-11e7-8c1f-798a5a037827.png)
+
+- Edit file config. You can download file from this repo.
+
+![image](https://user-images.githubusercontent.com/31034437/30106330-4b419348-9325-11e7-8a2b-e18eb48b4d5e.png)
