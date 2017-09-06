@@ -1,4 +1,4 @@
-NetNam OpenVPN setup guide
+# NetNam OpenVPN setup guide
 
 ----
 ## Table of contents
