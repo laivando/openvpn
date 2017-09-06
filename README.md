@@ -6,8 +6,6 @@ NetNam OpenVPN setup guide
 [I. Mikrotik OpenVPN Server Configuration.](#openvpnserver)
 
 [II. Windows as OpenVPN Client installation & Configuration.](#openvpnclient)
-- [1. Thẻ tiêu đề](#thetieude)
-- [2. Chèn link, chèn ảnh](#chenlinkchenanh)
 	
 [III. NetNam OpenVPN topology.](#netnamvpn)
 - [1. Topology](#topo)
