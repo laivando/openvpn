@@ -10,7 +10,7 @@ NetNam OpenVPN setup guide
 [III. NetNam OpenVPN topology.](#netnamvpn)
 - [1. Topology](#topo)
 - [2. BGP Configuration](#bgpconfig)
-- [3. Config file for client](#clientconfigfile)
+- [3. Config file for NetNam HCM client](#clientconfigfile)
 
 <a name="openvpnserver"></a>
 ## I. Mikrotik OpenVPN Server Configuration.
@@ -45,7 +45,7 @@ NetNam OpenVPN setup guide
 
 ![image](https://user-images.githubusercontent.com/31034437/30105076-b2660ce2-9321-11e7-94f3-2d55eddbcbdc.png)
 
-<a name="oopenvpnclient"></a>
+<a name="openvpnclient"></a>
 ## II. Windows as OpenVPN Client installation & Configuration.
 
 - Download free OpenVPN client for windows from https://openvpn.net/index.php/download/community-downloads.html, and install it. Once it’s installed, move to the openvpn directory (C:\Program Files\OpenVPN\config).
@@ -55,3 +55,17 @@ NetNam OpenVPN setup guide
 - Edit file config. You can download file from this repo.
 
 ![image](https://user-images.githubusercontent.com/31034437/30106330-4b419348-9325-11e7-8a2b-e18eb48b4d5e.png)
+
+<a name="netnamvpn"></a>
+## III. NetNam OpenVPN topology.
+
+<a name="topo"></a>
+### [1. Topology]
+
+<a name="bgpconfig"></a>
+### [2. BGP Configuration]
+
+<a name="clientconfigfile"></a>
+### [3. Config file for NetNam HCM client]
+
+
