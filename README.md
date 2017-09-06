@@ -60,12 +60,12 @@ NetNam OpenVPN setup guide
 ## III. NetNam OpenVPN topology.
 
 <a name="topo"></a>
-### [1. Topology]
+### 1. Topology
 
 <a name="bgpconfig"></a>
-### [2. BGP Configuration]
+### 2. BGP Configuration
 
 <a name="clientconfigfile"></a>
-### [3. Config file for NetNam HCM client]
+### 3. Config file for NetNam HCM client
 
 
