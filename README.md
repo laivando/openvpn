@@ -1,27 +1,15 @@
 NetNam OpenVPN setup guide
 
 ----
-## usage
-1. Mikrotik OpenVPN Server Configuration.
-2. Windows as OpenVPN Client installation & Configuration.
-3. NetNam OpenVPN topology.
-4. BGP
-5. Config file client
+## Table of contents
 
-[I. Mở đầu](#Modau)
+[I. Mikrotik OpenVPN Server Configuration.](#openvpnserver)
 
-[II. Ngôn ngữ Markdown](#ngonngumarkdown)
+[II. Windows as OpenVPN Client installation & Configuration.](#openvpnclient)
 - [1. Thẻ tiêu đề](#thetieude)
 - [2. Chèn link, chèn ảnh](#chenlinkchenanh)
-- [3. Ký tự in đậm, in nghiêng](#kytuindaminnghieng)
-- [4. Trích dẫn, bo chữ](#trichdanbochu)
-- [5. Gạch đầu dòng](#gachdaudong)
-- [6. Tạo bảng](#taobang)
-- [Mẹo](#meo)
 	
-[III. Các thao tác với git và github](#cacthaotacvoigitvagithub)
-- [0. Repo](#repo)
-- [1. Cài đặt](#caidat)
-- [2. Thao tác với Repo](#thaotacvoirepo)
-	
-[Tổng kết](#Tongket)
+[III. NetNam OpenVPN topology.](#netnamvpn)
+- [1. Topology](#topo)
+- [2. BGP Configuration](#bgpconfig)
+- [3. Config file for client](#clientconfigfile)
