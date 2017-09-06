@@ -19,6 +19,6 @@ NetNam OpenVPN setup guide
 
 - Generate the master Certificate Authority (CA) certificate & key on cmd ( Windows - Run as adminnistrator) (https://openvpn.net/index.php/open-source/documentation/howto.html#pki)
 
-- Click on Import Button, then select the CA certificate file and Server certificate file (in my case, it is ca.crt, server.crt, server.key) and press Import.
-
+- Click on Import Button, then select the CA certificate file and Server certificate file.
+In my case, it is ca.crt, server.crt, server.key) and press Import.
 ![image](https://user-images.githubusercontent.com/31034437/30104927-37e213bc-9321-11e7-9339-41cbb71a44e9.png)
