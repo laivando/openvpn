@@ -1,0 +1,28 @@
+/routing bgp instance
+set default as=24176 redistribute-connected=yes router-id=10.1.1.27
+/routing ospf instance
+set [ find default=yes ] router-id=10.1.1.27
+/routing bfd interface
+set [ find default=yes ] interval=0.3s min-rx=0.3s multiplier=3
+/routing bgp peer
+add in-filter=r.rrc1-in name=RRC1 out-filter=r.rrc1-out remote-address=10.1.1.7 remote-as=24176 ttl=default update-source=lo0
+add in-filter=r.rrc2-in name=RRC2 out-filter=r.rrc2-out remote-address=10.1.1.8 remote-as=24176 ttl=default update-source=lo0
+/routing filter
+add action=accept chain=r.rrc1-in
+add action=discard chain=r.rrc1-in
+add action=accept chain=r.rrc1-out match-chain=p.rrc-out set-bgp-local-pref=2100
+add action=discard chain=r.rrc1-out
+add action=accept chain=r.rrc2-in
+add action=discard chain=r.rrc2-in
+add action=accept chain=r.rrc2-out match-chain=p.rrc-out set-bgp-local-pref=2100
+add action=discard chain=r.rrc2-out
+add action=accept append-bgp-communities=24176:4000 chain=p.rrc-out comment="set community c.netnam" prefix=10.20.27.0/24 prefix-length=0-32
+add action=discard chain=p.rrc-out
+/routing ospf interface
+add interface=sfp1 network-type=broadcast priority=0
+add cost=12 interface=sfp2 network-type=broadcast priority=0
+add interface=lo0 network-type=broadcast passive=yes priority=128
+/routing ospf network
+add area=backbone network=10.1.1.27/32
+add area=backbone network=172.20.1.0/24
+add area=backbone network=172.20.2.0/24
