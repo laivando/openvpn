@@ -64,7 +64,7 @@ NetNam OpenVPN setup guide
 <a name="clientconfigfile"></a>
 ### 3. Config file for NetNam HCM client
 
-\## Start ##
+\## Start ##<br>
 client<br>
 dev tun<br>
 proto tcp<br>
