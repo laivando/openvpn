@@ -59,17 +59,56 @@ NetNam OpenVPN setup guide
 <a name="netnamvpn"></a>
 ## III. NetNam OpenVPN topology.
 
-- [1. Topology]
-- [1. Topology]
-- [1. Topology](#topo)
-
 <a name="topo"></a>
 ### 1. Topology
+
+![image](https://user-images.githubusercontent.com/31034437/30106802-da27a452-9326-11e7-8986-c8b2914ff542.png)
 
 <a name="bgpconfig"></a>
 ### 2. BGP Configuration
 
+![image](https://user-images.githubusercontent.com/31034437/30106834-fa1b8062-9326-11e7-8bae-4e260fd8f40d.png)
+
+![image](https://user-images.githubusercontent.com/31034437/30106854-0adc800e-9327-11e7-8fbf-ab818fb1a3e5.png)
+
 <a name="clientconfigfile"></a>
 ### 3. Config file for NetNam HCM client
 
+\## Start ##
+client
+dev tun
+proto tcp
 
+remote 115.79.63.41 1755
+remote 115.79.63.43 1755
+remote 115.79.57.120 1755
+remote 115.79.63.24 1755
+remote 115.79.57.122 1755
+
+nobind
+persist-key
+
+tls-client
+ca ca.crt
+
+ping 10
+verb 3
+
+cipher AES-256-CBC
+auth SHA1
+pull
+
+auth-user-pass
+
+route 10.0.0.0 255.0.0.0
+route 101.53.58.0 255.255.255.0
+route 172.20.3.0 255.255.255.0
+route 172.115.0.0 255.255.255.0
+route 172.117.0.0 255.255.255.0
+route 172.20.2.0 255.255.255.0
+route 172.20.1.0 255.255.255.0
+route 101.53.21.0 255.255.255.0
+route 115.79.58.17 255.255.255.255
+route 10.160.0.0 255.255.255.0
+route 101.53.2.0 255.255.255.0
+\## End ##
